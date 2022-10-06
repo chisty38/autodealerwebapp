@@ -15,24 +15,24 @@ const app = express();
 
 
 //Connecting to Mongodb
-const db = async () => {
-    try {
-        const conn = await mongoose.connect('mongodb://localhost:27017/autorizz', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false
-        });
+//const db = async () => {
+//    try {
+//        const conn = await mongoose.connect('mongodb://localhost:27017/autorizz', {
+//            useNewUrlParser: true,
+//            useUnifiedTopology: true,
+//            useFindAndModify: false
+//        });
 
-        console.log("MongoDB connected");
+//        console.log("MongoDB connected");
 
-    } catch (err) {
-        console.log("MongoDB Error : Failed to connect");
-        console.log(err);
-        process.exit(1);
-    }
-}
+//    } catch (err) {
+//        console.log("MongoDB Error : Failed to connect");
+//        console.log(err);
+//        process.exit(1);
+//    }
+//}
 
-db();
+//db();
 
 
 // view engine setup
